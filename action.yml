@@ -1,5 +1,11 @@
 name: 'Pull Request Slack Notifier'
 description: 'Get notifications about your pull requests'
+inputs:
+  webhook_url:
+    description: 'The Slack App Webhook Url to be used to send notifications'
+    required: true
 runs:
   using: 'docker'
   image: 'Dockerfile'
+  args:
+    - ${{ inputs.webhook_url }}
