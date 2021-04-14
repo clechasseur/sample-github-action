@@ -1,0 +1,5 @@
+name: 'Pull Request Slack Notifier'
+description: 'Get notifications about your pull requests'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
