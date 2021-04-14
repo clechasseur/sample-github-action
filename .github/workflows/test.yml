@@ -10,4 +10,5 @@ jobs:
       - name: Send Slack Notifications
         uses: ./
         with:
-          webhook_url: ${{ secrets.WEBHOOR_URL }}
+          webhook_url: https://hooks.slack.com/services/some_erroneous_value
+          #webhook_url: ${{ secrets.WEBHOOR_URL }}
